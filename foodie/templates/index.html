@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
-<body>
+<body class="bg-dark">
     {% load static %}
     <div style="background-image: url('{% static 'images/bg1.jpg'' %}');width:100%;height:100vh;background-size:cover;">
         <div class="bg-black w-100 h-100 bg-opacity-50">
@@ -47,7 +47,8 @@
                     <div class="col-2 mt-2 mb-3">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h6>{{item.name}}</h6>
+                                <h6>Name : {{item.name}}</h6>
+                                <p>Location : {{item.location}}</p>
                             </div>
                         </div>
                     </div>
